@@ -1,5 +1,3 @@
-*{margin-left: 0cm;}
-
 body {
     background-color:#F3F2F2;
     font-family: 'Open Sans', sans-serif;
@@ -30,6 +28,10 @@ p {
     border-radius: 15px; */
 }
 
+ul {
+    padding:0%;
+}
+
 li {font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -37,26 +39,18 @@ li {font-family: Open Sans;
     line-height: 182.69%;
 }
 
-section{
-    /* border: 1px dashed #48C0AA;
-    border-radius: 15px; */
-    margin: 1em;
-}
-
 button {
     border: none;
     color: #FD636B;
-
-    padding: 15px 32px;
     text-align: center;
     display: inline-block;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.02em;
+    background-color: white 10%;
     border: 2px solid #FD636B;
     box-sizing: border-box;
     border-radius: 10px;
-
     width: 254px;
     height: 50px;
   }
@@ -71,7 +65,9 @@ nav{
     /* border: 1px dashed #48C0AA;
     border-radius: 15px; */
 }
-
+.navContainer{
+    display: none;
+}
 .navList{
     width: 50%;
     margin-left: auto;
@@ -91,29 +87,51 @@ nav{
     border-radius: 15px; */
 }
 
-footer{
-    /* border: 1px dashed #48C0AA;
-    border-radius: 15px; */
+.heroBanner {
+    padding: 60px 0 120px 0;
+    text-align: center;
+}
+
+
+.aboutTitle{
+    width:25%;
 }
 
 .about {
-    width: 80%;
-    position: relative;
+    width: 50%;
 }
 
-#about{
-    width: 100%;
+.aboutParagraph{
+    padding: 0 20px;
+}
+
+.aboutSection{
+    height: 650px;
     display: flex;
 }
 
+.imgContainer{
+    width: 25%;
+}
+
 .heroImg{
-    width: 316px;
-    padding: 0px 50px;
-    margin-left: 5em;
+    max-width: 316px;
     float: right;
 
     /* border: 1px dashed #48C0AA;
     border-radius: 15px; */
+}
+
+footer{
+   align-self: center;
+    /* border: 1px dashed #48C0AA;
+    border-radius: 15px; */
+}
+
+#footerText{
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
 }
 
 /* .content{
@@ -144,45 +162,139 @@ footer{
 .mySkills{
     display: flex;
     background-color: white;
-    margin-top: 50px;
-    margin-left: 70px;
+    padding: 5% 10%;
 }
 
 .fullWidth{
       width:100vw;
 }
 .flexContainer{
-    width:33%;
+    width: 20%;
 }
+
 
 .divider {
     width: 92px;
+    padding-top: 100px;
 }
 
-
-.workGrid {
+#workGrid {
     display: grid;
+    position:relative;
+    min-height: 500px;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    padding: 10px;
     grid-template-areas: 
     "project1 project1"
     "project2 project3";
   }
 
-  /* Grid CSS */
+.workGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
 #project1{
     grid-area: project1;
     height: 460px;
+    background-image: url(../images/ABC_multidevices_white.jpg)
 }
 
 #project2{
     grid-area: project2;
     height: 460px;
+    background-color: rgb(255, 185, 127);
 }
 
 #project3{
     grid-area: project3;
     height: 460px;
+    background-color: cadetblue;
 }
 
+.caseDescription{
+    margin: 0 50px;
+    color: white;
+}
+
+#aboutGrid {
+    display: grid;
+    position:relative;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-template-areas: 
+    "aboutTitle aboutPara heroImg";
+    padding: 10%;
+  }
+
+  .aboutGridArea {
+    display: flex;
+    position: relative;
+  }
+
+  #aboutPara{
+      padding: 0 100px 0 100px;
+  }
+
+  #aboutText{
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    #logo{
+        width: 190px;
+        padding: 1.5em;
+    }
+    .navContainer{
+        display: flex;
+        float: right;
+    }
+
+    .navList{
+        display: none;
+    }
+
+    .flexContainer {
+        width: 100%;
+        text-align: center;
+    }
+    .mySkills{
+        display: block;
+    }
+    #workGrid{
+        display: block;
+    }
+
+    .workGridArea{
+        align-items: flex-end;
+        padding-bottom: 30px;
+    }
+
+    .caseDescription{
+        text-shadow: 2px 2px 20px black;
+    }
+
+    .aboutGridArea{
+        align-items: flex-end;
+        padding-bottom: 30px;
+    }
+
+    #aboutGrid{
+        display: block;
+        align-items: center;
+    }
+
+    #aboutPara{
+        padding: 0 30px 0 30px;
+    }
+    .heroImg{
+        max-width: 200px;
+        float:inline-end;
+
+}
