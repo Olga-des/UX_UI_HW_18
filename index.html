@@ -4,7 +4,6 @@
         <link href="css/styles.css" rel="stylesheet" type="text/css">
          <title>Olga Peshkova</title>
     </head>
-
     <body>
         <header class=navigation>
             <nav>
@@ -13,7 +12,6 @@
                         src="images/logo.png" 
                         alt="logo">
                 </div>
-                
                     <ul class="navList">
                         <li class="inline-block navItem">about</li>
                         <li class="inline-block navItem">work</li>
@@ -24,36 +22,28 @@
                         src="images/menu.png" 
                         alt="menu">
                 </div>
-    
-                
-            
             </nav>      
-            
         </header>
-
         <div class="heroBanner">
-           
                 <p id="introDescription">UI DESIGNER MELBOURNE
                 </p> 
                 <p id="introSummary">Brief brand statement goes here, more than likely it will go over two lines
                 </p> 
-           
         </div>
-        
-    
 
+            <!-- My Work section coded using CSS flex-->
 
         <div id="workGrid" id="overlay" >
             <div id="project1" class="workGridArea">
                 <div class="caseDescription"> 
-                    <h4>Case Study 1</h4>
+                    <h4>ABC Responsive Web Design</h4>
                     <p>Some text goes here. Some text goes here.</p>
                     <button>View Project</button>
                 </div>
             </div>
             <div id="project2" class="workGridArea">
                 <div class="caseDescription">
-                    <h4>Case Study 2</h4>
+                    <h4>Link2Care App</h4>
                     <p>Some text goes here. Some text goes here.</p>
                     <button>View Project</button>
                 </div>
@@ -67,15 +57,31 @@
             </div>
         </div>
 
-    <!-- My UX Skills section coded using CSS flex-->
-
+        <div id="aboutMobile">
+            <div class="imageContainer">
+                <img class="heroImgMobile" src="images/profile_photo.png" 
+                alt="profile-photo">
+            </div>
+            <div id="titleMobile">
+                <h3>About</h3>
+            </div>
+            <div id="aboutTextMobile">
+                <p>
+                    Hi there, my name is Olga Peshkova. I'm based in Melbourne and specialise in user research, responsive web, desktop and mobile design. 
+                    Over the past 10 years I've drawn from my graphic design background to complete a wide range of projects in branding, illustration, photography, digital and print media. With this experience I've taken the next step into the world of UX/UI where I can put my efforts into improving and designing digital products that are beautiful, simple and efficient.
+                    Outside of work I enjoy reading, working on personal creative projects, learning and messing around in the garden with my beautiful labrador, Sam. 
+                </p>
+            </div>
+            <div class="buttonContainer">
+                    <button id=aboutButton>Download Resume</button>
+            </div>
+        </div>
         <div id="aboutGrid">
             <div id="aboutTitle" class="aboutGridArea">
                 <div>
                     <h3>About</h3>
                 </div>
             </div>
-
             <div id="aboutPara" class="aboutGridArea">
                 <div>
                     <p id="aboutText">
@@ -89,9 +95,8 @@
                     </div>
                 </div>
             </div>
-
             <div id="heroImg" class="aboutGridArea">
-                <div>
+                <div class="imageContainer">
                     <img class="heroImg" 
                     src="images/profile_photo.png" 
                     alt="profile-photo">
@@ -100,37 +105,12 @@
 
         </div>
 
+    <!-- My UX Skills section coded using CSS flex-->
 
-        <!-- <section class="aboutSection"> 
-            
-            <div class="aboutTitle">
-                <h3>About</h3>
-            </div>
-            <div class="about">
-                    <p class="aboutParagraph">
-                        Hi there, my name is Olga Peshkova. I'm based in Melbourne and specialise in user research, responsive web, desktop and mobile design. 
-                        Over the past 10 years I've drawn from my graphic design background to complete a wide range of projects in branding, illustration, photography, digital and print media. With this experience I've taken the next step into the world of UX/UI where I can put my efforts into improving and designing digital products that are beautiful, simple and efficient.
-                        Outside of work I enjoy reading, working on personal creative projects, learning and messing around in the garden with my beautiful labrador, Sam. 
-                    </p>
-                    <button>Download Resume</button>
-                
-            </div>
-            <div class="imgContainer">
-                <img class="heroImg" 
-                    src="images/profile_photo.png" 
-                    alt="profile-photo">
-            </div> 
-        </section> -->
-       
-
-
-
-
-        <div class="mySkills fullWidth">
+    <div class="mySkills fullWidth">
             <div class="flexContainer">
                 <h3 class="skillsList">Skills</h3>  
             </div>
-
             <div class="flexContainer">
                 <img>
                 <ul class="skillsList">
@@ -148,7 +128,6 @@
                     <img src="/images/divider.png" class=divider>
                 </ul>
             </div>
-
             <div class="flexContainer">
                 <img>
                 <ul class="skillsList">
@@ -166,10 +145,8 @@
                     <li>Redlining</li>
                 </ul>
             </div>
-
             <div class="flexContainer">
                 <img>
-            
                 <ul class="skillsList">
                     <h4>Graphic Design</h4>
                     <li>Aesthetics</li>
@@ -186,20 +163,10 @@
                 </ul>
             </div>
         </div>
-      
-
         <footer>
             <p id=footerText>
                 © 2021 Olga Peshkova. All Rights Reserved.
             </p>
-
-
-            <!-- <ul>
-                <li class="inline-block">about</li>
-                <li class="inline-block">work</li>
-                <li class="inline-block">contact</li>
-            </ul> -->
         </footer>
-    
     </body>
 </html>

@@ -247,6 +247,10 @@ footer{
     padding: 10%;
   }
 
+  #aboutMobile{
+      display: none;
+  }
+
   .aboutGridArea {
     display: flex;
     position: relative;
@@ -307,18 +311,48 @@ footer{
         padding-bottom: 30px;
     }
 
-    #aboutGrid{
-        display: block;
-        align-items: center;
+    #aboutGrid {
+        display: none;
     }
+
+    #aboutMobile {
+        display: grid;
+        position:relative;
+        grid-template-columns: auto;
+        padding: 10%;
+        align-content: center;
+      }
 
     #aboutPara{
         padding: 0 30px 0 30px;
     }
-    .heroImg{
-        max-width: 200px;
-        float:inline-end;
+
+    #heroImg{
+        align-content: center;
     }
-
-
+    .heroImgMobile{
+        width: 200px;
+        display: block;
+        margin: 15%;
+    }
+    .imageContainer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+   
+    #titleMobile{
+        text-align: center;
+    }
+    #aboutTextMobile{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .buttonContainer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
 }
